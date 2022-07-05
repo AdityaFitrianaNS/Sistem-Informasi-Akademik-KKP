@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1a8f0be2-132a-40eb-bb5b-85232aff453a">
+	<property name="ireport.zoom" value="1.4641000000000022"/>
+	<property name="ireport.x" value="17"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from tb_jadwal]]>
+	</queryString>
+	<field name="kd_pelajaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hari" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mataPelajaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kelas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="namaGuru" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jamPelajaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="91" splitType="Stretch">
+			<image>
+				<reportElement uuid="2784870f-9d42-43bd-93e3-d1bb973d4c45" x="73" y="0" width="111" height="84"/>
+				<imageExpression><![CDATA["C:\\Users\\user\\Documents\\NetBeansProjects\\Sistem Informasi SMAN1 Babakan Madang\\src\\img\\admin.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="1c5577d7-5950-47d8-bb3c-a6c696267d35" x="166" y="14" width="301" height="24"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SMAN 1 BABAKAN MADANG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4d493fe7-913b-41f5-8d87-87b3f1f4d97b" x="148" y="27" width="338" height="57"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Jl. Babakan Madang, Kp. Banceuy, Kec. Babakan Madang, Kabupaten Bogor, Jawa Barat 16811]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="118" splitType="Stretch">
+			<line>
+				<reportElement uuid="3347d805-b0fb-4c81-b417-2e571eb529a2" x="0" y="0" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="7a872b85-5740-43ac-aad9-45153b576a00" x="0" y="34" width="555" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jadwal Pelalajaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7004b718-30db-4b17-882e-d1146f98a08f" x="419" y="98" width="31" height="20"/>
+				<textElement/>
+				<text><![CDATA[Bogor, ]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement uuid="9b8712b9-c2f4-4de0-b0a0-c555ee78f0f2" x="452" y="98" width="103" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="260abfcf-7c7d-4750-86b5-f3734d587ce4" x="0" y="0" width="92" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="260abfcf-7c7d-4750-86b5-f3734d587ce4" x="92" y="0" width="92" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="260abfcf-7c7d-4750-86b5-f3734d587ce4" x="184" y="0" width="92" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="260abfcf-7c7d-4750-86b5-f3734d587ce4" x="276" y="0" width="92" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="260abfcf-7c7d-4750-86b5-f3734d587ce4" x="368" y="0" width="92" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="260abfcf-7c7d-4750-86b5-f3734d587ce4" x="460" y="0" width="95" height="20"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="64aef9a8-2b74-40cb-a804-4380081d538d" x="0" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kode Pelajaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="569a4e36-3c0a-474f-8fb1-659d622919f5" x="92" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hari]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="53521922-4e04-41aa-8f9d-55b93a15249b" x="184" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mata Pelajaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3d046c9f-f601-4582-80b9-6c8b60cb743e" x="276" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kelas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d72e4c99-27ed-4c77-b3b4-f54ee756c831" x="368" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Guru Pengajar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b9c70481-f9d2-430d-a6b3-66e8fe5a3b4a" x="460" y="0" width="95" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jam Pelajaran]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="05830185-38f8-4af4-872e-cca87ea97c5a" x="0" y="0" width="92" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="05830185-38f8-4af4-872e-cca87ea97c5a" x="92" y="0" width="92" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="05830185-38f8-4af4-872e-cca87ea97c5a" x="184" y="0" width="92" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="05830185-38f8-4af4-872e-cca87ea97c5a" x="276" y="0" width="92" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="05830185-38f8-4af4-872e-cca87ea97c5a" x="368" y="0" width="92" height="20"/>
+			</rectangle>
+			<rectangle>
+				<reportElement uuid="05830185-38f8-4af4-872e-cca87ea97c5a" x="460" y="0" width="95" height="20"/>
+			</rectangle>
+			<textField>
+				<reportElement uuid="32b52b0a-6ff9-488d-bbeb-f0dc4f34d673" x="0" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kd_pelajaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e8c346f0-a7c7-47b1-8359-a63da36647b6" x="92" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hari}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="770011be-315f-4d51-81f2-c3c5727dda25" x="184" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mataPelajaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9c0a225a-f867-4cd4-813f-a6f979a079df" x="276" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kelas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="00a3e338-41d6-488f-884c-e730d86794c9" x="368" y="0" width="92" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{namaGuru}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7ac4f46a-ac1a-4c9e-a504-63e0726ace75" x="460" y="0" width="95" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jamPelajaran}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="2eb83af2-c3af-4437-bdc1-f7c28e3a15eb" x="433" y="3" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="12"/>
+				</textElement>
+				<text><![CDATA[Mengetahui]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2eb83af2-c3af-4437-bdc1-f7c28e3a15eb" x="433" y="37" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat"/>
+				</textElement>
+				<text><![CDATA[TTD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2eb83af2-c3af-4437-bdc1-f7c28e3a15eb" x="433" y="68" width="100" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="12"/>
+				</textElement>
+				<text><![CDATA[Kepala Sekolah]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
